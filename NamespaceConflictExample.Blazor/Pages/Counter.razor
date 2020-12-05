@@ -1,10 +1,13 @@
 ﻿@page "/counter"
 
+@using Blazor.Components.Debounce
 <h1>Counter</h1>
 
 <p>Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<DebounceInputText />
 
 @code {
     private int currentCount = 0;
